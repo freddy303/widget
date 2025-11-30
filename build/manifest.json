@@ -25,19 +25,25 @@
       "assets/marker-icon.png"
     ]
   },
-  "resources/js/widget/DemoEntry.jsx": {
-    "file": "assets/DemoEntry.js",
-    "name": "DemoEntry",
-    "src": "resources/js/widget/DemoEntry.jsx",
+  "resources/js/widget/index.demo.jsx": {
+    "file": "assets/index.demo.js",
+    "name": "index.demo",
+    "src": "resources/js/widget/index.demo.jsx",
     "isEntry": true,
     "imports": [
       "resources/js/widget/App.jsx"
+    ],
+    "css": [
+      "assets/index.css"
     ]
   },
   "resources/js/widget/mount.js": {
     "file": "assets/mount.js",
     "name": "mount",
     "src": "resources/js/widget/mount.js",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/mount.css"
+    ]
   }
 }
