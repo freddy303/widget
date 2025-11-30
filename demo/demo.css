@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    background-image: url(./../images/demoBackground.png);
+    background-image: url(./demoBackground.png);
     background-size: cover;
 
     #bookHotel {

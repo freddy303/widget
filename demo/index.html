@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./build/assets/mount.js"></script>
+    <!-- <script src="http://127.0.0.1:8000/widget/mount.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Znamenny+Musical+Notation&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+    <div id="bookHotel">
+        <header>Book Your Hotel</header>
+        <main>
+            <input class="input" id="city" type="text" placeholder="City">
+            <input class="input" id="dateStart" type="date" placeholder="Start Date">
+            <input class="input" id="dateEnd" type="date" placeholder="End Date">
+            <input class="input" id="guests" type="number" placeholder="Guests">
+            <button class="input" onclick="mountWidget()">Book</button>
+        </main>
+    </div>
+    <script>
+        const inputCity = document.getElementById('city');
+        const inputDateStart = document.getElementById('dateStart');
+        const inputDateEnd = document.getElementById('dateEnd');
+        const inputGuests = document.getElementById('guests');
+
+        function mountWidget() {
+            TriplomatWidget.mount({
+                city: inputCity.value,
+                dateStart: inputDateStart.value,
+                dateEnd: inputDateEnd.value,
+                guests: inputGuests.value
+            }, {
+                url: 'https://freddy303.github.io/widget/#'
+            });
+        }
+    </script>
+</body>
+</html>
