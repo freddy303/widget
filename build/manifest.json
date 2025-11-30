@@ -1,0 +1,43 @@
+{
+  "node_modules/leaflet/dist/images/layers-2x.png": {
+    "file": "assets/layers-2x.png",
+    "src": "node_modules/leaflet/dist/images/layers-2x.png"
+  },
+  "node_modules/leaflet/dist/images/layers.png": {
+    "file": "assets/layers.png",
+    "src": "node_modules/leaflet/dist/images/layers.png"
+  },
+  "node_modules/leaflet/dist/images/marker-icon.png": {
+    "file": "assets/marker-icon.png",
+    "src": "node_modules/leaflet/dist/images/marker-icon.png"
+  },
+  "resources/js/widget/App.jsx": {
+    "file": "assets/App.js",
+    "name": "App",
+    "src": "resources/js/widget/App.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/App.css"
+    ],
+    "assets": [
+      "assets/layers.png",
+      "assets/layers-2x.png",
+      "assets/marker-icon.png"
+    ]
+  },
+  "resources/js/widget/DemoEntry.jsx": {
+    "file": "assets/DemoEntry.js",
+    "name": "DemoEntry",
+    "src": "resources/js/widget/DemoEntry.jsx",
+    "isEntry": true,
+    "imports": [
+      "resources/js/widget/App.jsx"
+    ]
+  },
+  "resources/js/widget/mount.js": {
+    "file": "assets/mount.js",
+    "name": "mount",
+    "src": "resources/js/widget/mount.js",
+    "isEntry": true
+  }
+}
