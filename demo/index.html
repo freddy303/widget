@@ -15,9 +15,9 @@
     <div id="bookHotel">
         <header>Book Your Hotel</header>
         <main>
-            <input class="input" id="city" type="text" placeholder="City">
-            <input class="input" id="dateStart" type="date" placeholder="Start Date">
-            <input class="input" id="dateEnd" type="date" placeholder="End Date">
+            <input class="input" id="city" type="text" placeholder="City" value="CPH">
+            <input class="input" id="dateStart" type="date" placeholder="Start Date" value="2026-04-23">
+            <input class="input" id="dateEnd" type="date" placeholder="End Date" value="2026-04-24">
             <input class="input" id="guests" type="number" placeholder="Guests">
             <button class="input" onclick="mountWidget()">Search</button>
         </main>
@@ -30,11 +30,13 @@
 
         function mountWidget() {
             TriplomatWidget.mount({
-                location: inputCity.value,
-                dateStart: inputDateStart.value,
-                dateEnd: inputDateEnd.value,
-                persons: inputGuests.value
+                destination: inputCity.value,
+                start_date: inputDateStart.value,
+                end_date: inputDateEnd.value,
+                people: [{ type: 'adult' }, { type: 'adult' }, { type: 'child', age: 5 }],
+                origin: 'SGD',
             }, {
+                preset_id: '9e2161ee-54a0-4f94-8b3b-35920edc2031',
                 url: 'https://freddy303.github.io/widget/#'
             });
         }
